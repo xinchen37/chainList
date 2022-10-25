@@ -1,11 +1,26 @@
 {
   "name": "wallet-chian-list",
-  "version": "0.0.0",
+  "version": "0.0.4",
+  "description": "Configurable multi-chain",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "keywords": [
+    "vite",
+    "wallet",
+    "chain"
+  ],
+  "homepage": "https://github.com/xinchen37/chainList",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xinchen37/chainList"
+  },
+  "bugs": {
+    "url": "https://github.com/xinchen37/chainList/issues",
+    "email": "376735613@qq.com"
   },
   "dependencies": {
     "@walletconnect/web3-provider": "^1.8.0",
@@ -13,6 +28,7 @@
     "ethers": "^5.7.2",
     "pinia": "^2.0.23",
     "vue": "^3.2.41",
+    "wallet-chian-list": "git+https://git@github.com/xinchen37/chainList.git",
     "web3modal": "^1.9.9"
   },
   "devDependencies": {
