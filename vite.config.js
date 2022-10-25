@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from 'node:url';
+import path from 'path';
 
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
@@ -62,6 +63,11 @@ export default defineConfig({
     }
   },
   build: {
+    lib: {
+      entry: path.resolve(__dirname, 'src/hooks/index.js'),
+      name: 'index',
+      fileName: (format) => `index.${format}.js`
+    },
     rollupOptions: {
       plugins: [
         // Enable rollup polyfills plugin

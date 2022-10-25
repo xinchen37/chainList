@@ -1,5 +1,5 @@
 <script setup>
-import walletList from '@/hooks'
+import walletList from 'wallet-chian-list/src/hooks/index.js'
 const {
   NewChainList,
   useChainStore,
