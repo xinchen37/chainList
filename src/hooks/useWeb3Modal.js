@@ -1,9 +1,9 @@
 import { computed, ref } from 'vue'
-import { getObjVal } from '@/utils/object'
+import { getObjVal } from '../utils/object'
 import Web3Modal from 'web3modal'
-import { networkVersionHex } from '@/utils/number'
+import { networkVersionHex } from '../utils/number'
 import WalletConnectProvider from '@walletconnect/web3-provider'
-import { useChainStore } from '@/stores/chain'
+import { useChainStore } from '../stores/chain'
 
 export default () => {
   const configStore = useChainStore()

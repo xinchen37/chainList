@@ -2,8 +2,8 @@
 // import { createApp } from 'vue'
 // import useWeb3 from '@/hooks/useWeb3'
 // import { createPinia } from 'pinia';
-import { useChainStore } from '@/stores/chain'
-import { useWalletStore } from '@/stores/wallet'
+import { useChainStore } from '../stores/chain'
+import { useWalletStore } from '../stores/wallet'
 import useLogin from './useLogin'
 import useWeb3 from './useWeb3'
 import useWeb3Modal from './useWeb3Modal'

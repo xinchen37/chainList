@@ -1,10 +1,10 @@
 import { computed } from 'vue'
 import { Contract, providers } from 'ethers'
-import { useWalletStore } from '@/stores/wallet'
+import { useWalletStore } from '../stores/wallet'
 
-import useWeb3Modal from '@/hooks/useWeb3Modal'
+import useWeb3Modal from '../hooks/useWeb3Modal'
 
-import { useChainStore } from '@/stores/chain'
+import { useChainStore } from '../stores/chain'
 
 export default () => {
   const walletStore = useWalletStore()
