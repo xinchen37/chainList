@@ -30,12 +30,12 @@ export default () => {
 
     async init() {
       let result = []
-      if (this.#chainList.length && !this.#jsonUrl) {
+      if (this.#chainList && !this.#jsonUrl) {
         result = this.#updateChainList(this.#chainList)
       }
   
       if (this.#jsonUrl && !this.#chainList) {
-        const data = await fetch(`${this.#jsonUrl}v=${Date.now()}`).then(res => res.json())
+        const data = await fetch(`${this.#jsonUrl}?v=${Date.now()}`).then(res => res.json())
         result = this.#updateChainList(data)
       }
       chainStore.setChainList(result)
