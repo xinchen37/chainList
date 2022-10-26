@@ -53,7 +53,8 @@ export default () => {
           }
         }
       } else {
-        chainList[0].defaultFlag = true
+        const defaultFlag = chainList.some(el => el.defaultFlag)
+        if (!defaultFlag) chainList[0].defaultFlag = true
       }
       return chainList
     }

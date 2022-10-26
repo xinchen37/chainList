@@ -19,8 +19,8 @@ export const useChainStore = defineStore({
       return result
     },
     chainInfo: (state) => {
-      let result = null
-      result = state.list.find(el => el.defaultFlag)
+      let result = state.list[0]
+      result = state.list.find(el => !!el.defaultFlag)
       return result
     },
     chainId: (state) => {

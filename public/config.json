@@ -7,7 +7,7 @@
     "chainName": "Dev - Testnet-1",
     "networkName": null,
     "decimals": 18,
-    "defaultFlag": true,
+    "defaultFlag": false,
     "contract": {
       "factoryAddress": "0x0A0dCcEA355828e7d3f1858c478fE08B62546a98",
       "multiCallAddress": ""
@@ -21,7 +21,7 @@
     "chainName": "Dev - Testnet-2",
     "networkName": null,
     "decimals": 18,
-    "defaultFlag": false,
+    "defaultFlag": true,
     "contract": {
       "factoryAddress": "0x979C206F1277Fb2C940Cb277bF0Fb00d55560DfE",
       "multiCallAddress": ""
