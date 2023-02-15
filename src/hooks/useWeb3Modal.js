@@ -90,6 +90,7 @@ export default () => {
           params: [switchParams.value]
         });
       }
+      return Promise.reject(error)
     }
   }
 
